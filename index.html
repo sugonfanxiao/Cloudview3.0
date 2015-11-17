@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cloudview 2.0</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular-grid/ng-grid.css">
+    <link rel="stylesheet" href="css/app.css">
+<!--       <script src="js/websocket.js"></script> -->
+
+</head>
+<body>
+   <div class="loading-modal modal" ng-if="loading">
+        <div class="loading">
+            <img src="images/loading.gif" alt=""/><span ng-bind="loading_text"></span>
+        </div>
+    </div>
+    <div ui-view></div>
+<!--     <div> -->
+<!-- 		<input type="submit" value="Start" onclick="start()" /> -->
+<!-- 	</div> -->
+<!-- 	<div id="messages"></div> -->
+<script  data-main="js/main.js" src="lib/requirejs/require.js" ></script> 
+</html>
